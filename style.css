@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*object-position: 65% center; /* ← shift focus to the right */
+  z-index: -1;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: rgb(117, 116, 116);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 60px;
+    padding-bottom: 0px;
+    
+    /*background-image: url("/assets/images/home-bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    
+    background-position:center;
+    background-repeat: no-repeat;*/
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#title h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#title h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#tracklist-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+#tracklist-title {
+    margin-bottom: 20px;
+}
+
+#tracklist-title h5 {
+    font-size: 1.5rem;
+}
+
+#tracklist-body {
+    width: 100%;
+}
+
+#tracks {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#tracks li {
+    font-size: 1.1rem;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+#tracks a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#tracks a:hover {
+    color: #666;
+}
+
+
+
+#listen{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#icons a{
+    color: rgb(129, 131, 131);
+    transition: all 0.3 ease;
+    font-size: 2rem;
+
+}
+
+#icons a:hover{
+    color:#313131;
+    transform:scale(1.5);
+}
+
+
+
+#site-footer {
+    margin-top: auto;          /* pushes footer to bottom */
+   padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    
+}
+
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+
+
+/* Tablet screens - scale down from desktop */
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 40px;
+        object-position: 60% center;
+    }
+    
+    #title h1 {
+        font-size: 2.5rem;
+    }
+    
+    #title h3 {
+        font-size: 1.3rem;
+    }
+    
+    #tracklist-container {
+        padding: 0 20px;
+    }
+    
+    #tracks li {
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Mobile screens - smallest sizes */
+@media screen and (max-width: 768px) {
+
+
+    body {
+        padding: 20px;
+    }
+    
+    #title {
+        margin-bottom: 10px;
+    }
+    
+    #title h1 {
+        font-size: 2rem;
+    }
+    
+    #title h3 {
+        font-size: 1.1rem;
+    }
+    
+    #tracklist-container {
+        padding: 0 10px;
+    }
+    
+    #tracklist-title h5 {
+        font-size: 1.3rem;
+    }
+    
+    #tracks li {
+        font-size: 0.95rem;
+        padding: 10px;
+        margin-bottom: 8px;
+    }
+
+    #icons a{
+    font-size: 1.5rem;
+    }
+
+
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 15px;
+        /*background-image: url("/assets/images/home-bg2.png"); /* Different image for mobile */
+        /*background-position: center center;
+        background-size: cover;*/
+        
+    }
+    
+    #title h1 {
+        font-size: 1.5rem;
+    }
+    
+    #title h3 {
+        font-size: 1rem;
+    }
+    
+    #tracklist-title h5 {
+        font-size: 1.2rem;
+    }
+    
+    #tracks li {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    }
+
+

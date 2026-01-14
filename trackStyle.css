@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #5e5b5b;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 60px;
+    padding-bottom: 0%;
+    
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid blueviolet;
+
+       /* Glass effect */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    
+    /* Glossy shine effect */
+    position: relative;
+}
+
+#title h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#title h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#lyrics{
+    border: 1px solid blueviolet;
+    
+}
+
+#lyrics h1 {
+    font-size: 2.5rem; /* Desktop size for lyrics title */
+    margin-bottom: 1rem;
+    /*margin-left: 3rem;*/
+    font-family: "Courier New", Courier, monospace;
+}
+
+    #lyrics pre {
+    font-size: 1.1rem; /* Desktop size for lyrics text */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.3;
+    line-spacing: 
+}
+
+#lyrics {
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    
+    /* Glossy shine effect */
+    position: relative;
+}
+
+#listen{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* Glass effect */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    
+    /* Glossy shine effect */
+    position: relative;
+    
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#icons a{
+    color: rgb(129, 131, 131);
+    transition: all 0.3 ease;
+    font-size: 2rem;
+
+}
+
+#icons a:hover{
+    color:#313131;
+    transform:scale(1.5);
+}
+
+#site-footer {
+    margin-top: auto;          /* pushes footer to bottom */
+   padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    
+}
+
+.footer-logo {
+    max-width: 80px;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+/* Tablet screens - scale down from desktop */
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 40px;
+    }
+    
+    #title h1 {
+        font-size: 2.5rem;
+    }
+    
+    #title h3 {
+        font-size: 1.3rem;
+    }
+    
+    
+     #lyrics h1 {
+        font-size: 2.1rem; /* 2.5 * 0.83 ≈ 2.1 */
+    }
+    
+    #lyrics pre {
+        font-size: 0.95rem; /* 1.1 * 0.83 ≈ 0.95 */
+    }
+
+}
+
+/* Mobile screens - smallest sizes */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+    
+    #title {
+        margin-bottom: 30px;
+    }
+    
+    #title h1 {
+        font-size: 2rem;
+    }
+    
+    #title h3 {
+        font-size: 1.1rem;
+    }
+    
+
+    #lyrics h1 {
+        font-size: 1.7rem; /* 2.5 * 0.67 ≈ 1.7 */
+        text-align:center;
+    }
+    
+    #lyrics pre {
+        font-size: 0.9rem; /* 1.1 * 0.67 ≈ 0.9 */
+    }
+
+        #icons a{
+        font-size: 1.5rem;
+    }
+
+
+ 
+}
+
+
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    #title h1 {
+        font-size: 1.5rem;
+    }
+    
+    #title h3 {
+        font-size: 1rem;
+    }
+    
+    
+
+        #lyrics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+        #lyrics h1 {
+        align-self: flex-start; /* Keeps h1 on the left */
+        margin-left: 0 !important; /* Removes the inline style */
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+
+        font-size: 1.25rem; /* 2.5 * 0.5 = 1.25 */
+        margin-left: 0 !important;
+        align-self: flex-start;
+    }
+    
+    #lyrics pre {
+        white-space: pre-wrap; /* Allows wrapping */
+        word-wrap: break-word;
+        text-align: left; /* Text stays left-aligned */
+        font-size: 0.85rem;
+        font-family: "Poppins", sans-serif;
+        max-width: 90%; /* Controls the width of the text block */
+
+        font-size: 0.75rem; /* 1.1 * 0.5 = 0.55, but 0.75 is more readable */
+        max-width: 90%;
+    }
+
+    #icons a{
+        font-size: 1.5rem;
+    }
+
+
+ 
+}
